@@ -142,12 +142,7 @@ python main.py --mode demo --n_subjects 4
 
 ## 📊 数据采集
 
-### 实验设置
 
-<div align="center">
-  <img src="docs/figures/experiment_layout.png" alt="Experiment Layout" width="600"/>
-  <p><em>图2: 三种典型实验场景（空大厅、办公室、实验室）</em></p>
-</div>
 
 ### 采集参数
 
@@ -231,10 +226,7 @@ python main.py --mode test_multi \
 
 ### 参数影响
 
-<div align="center">
-  <img src="docs/figures/parameter_analysis.png" alt="Parameter Analysis" width="800"/>
-  <p><em>图3: 关键参数对性能的影响</em></p>
-</div>
+
 
 - **最佳收发距离**: 4 m
 - **最佳行走时间**: 5 s
@@ -353,25 +345,6 @@ plot_confusion_matrix(y_true, y_pred)
 - 调整CycleGAN的λ参数
 - 尝试其他域适配方法（如CORAL、MMD）
 
-## 📝 引用
-
-如果您在研究中使用了本代码，请引用原论文：
-
-```bibtex
-@article{zhang2023widiag,
-  title={Wi-Diag: Robust Multi-subject Abnormal Gait Diagnosis with Commodity Wi-Fi},
-  author={Zhang, Lei and Ma, Yazhou and Fan, Xiaojie and Fan, Xiaochen and 
-          Zhang, Yonggang and Chen, Zhenxiang and Chen, Xianyi and Zhang, Daqing},
-  journal={IEEE Internet of Things Journal},
-  year={2023},
-  publisher={IEEE},
-  doi={10.1109/JIOT.2023.3301908}
-}
-```
-
-## 📄 许可证
-
-本项目采用MIT许可证。详见 [LICENSE](LICENSE) 文件。
 
 ## 🤝 贡献指南
 
@@ -382,23 +355,3 @@ plot_confusion_matrix(y_true, y_pred)
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 提交 Pull Request
-
-## 📧 联系
-
-- 第一作者: 张雷 (lzhang@tju.edu.cn)
-- 通讯作者: 张大力 (daqing.zhang@telecom-sudparis.eu)
-- 项目主页: [https://github.com/yourusername/wi-diag](https://github.com/yourusername/wi-diag)
-
-## 🙏 致谢
-
-本工作受以下基金支持：
-- 天津市自然科学基金 (22JCYBJC00120)
-- 欧盟Horizon EIC项目 (SUSTAIN, 101071179)
-- 山东省网络环境智能计算技术重点实验室开放基金
-
----
-
-<div align="center">
-  <p>如果这个项目对您有帮助，请给一个⭐️！</p>
-  <p>© 2023 Wi-Diag Team</p>
-</div>
