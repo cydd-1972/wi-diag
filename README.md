@@ -205,7 +205,7 @@ python main.py --mode test_multi \
     --n_subjects 3
 ```
 
-## 📈 实验结果
+## 📈 实验结果（论文数据）
 
 ### 整体性能
 
@@ -322,36 +322,3 @@ metrics = calculate_metrics(y_true, y_pred)
 plot_confusion_matrix(y_true, y_pred)
 ```
 
-## ❓ 常见问题
-
-### Q1: 没有Intel 5300网卡，如何获取CSI数据？
-- 可以使用项目提供的合成数据生成函数：`data_loader.generate_synthetic_csi()`
-- 或使用其他Wi-Fi嗅探工具（如ESP32-S3）采集原始信号
-
-### Q2: ICA分离需要预先知道人数，如何解决？
-- 当前版本需要手动指定人数
-- 未来版本将集成人数检测模块（如Wi-Count）
-
-### Q3: CycleGAN训练需要多少数据？
-- 论文中使用：源域513张、目标域452张频谱图
-- 可以通过数据增强扩充数据集
-
-### Q4: 多人行走是否必须同时起步？
-- 是的，目前系统要求多人同时起步
-- 这是实验控制的必要条件
-
-### Q5: 如何提高跨场景泛化能力？
-- 采集更多场景的训练数据
-- 调整CycleGAN的λ参数
-- 尝试其他域适配方法（如CORAL、MMD）
-
-
-## 🤝 贡献指南
-
-欢迎贡献代码、提出问题或建议！
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
